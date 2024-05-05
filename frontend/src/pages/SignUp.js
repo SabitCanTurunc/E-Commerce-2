@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Footer = () => {
+const SignUP = () => {
   return (
     <div>
-      dynamic Footer
+      Sign Up
     </div>
   )
 }
 
-export default Footer
+export default SignUP
