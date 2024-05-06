@@ -37,7 +37,7 @@ const Login = () => {
                 <img className='rounded-full' src={loginIcons} alt='login icon'></img>
             </div>
 
-            <form className='pt-6' onSubmit={handleSubmit}>
+            <form className='pt-6 flex flex-col gap-2' onSubmit={handleSubmit}>
                 <div className=''>
                     <label>Email:</label>
                     <div className='bg-slate-200 p-2 rounded-md'>
@@ -87,7 +87,7 @@ const Login = () => {
                 
             </form>
             <p className='my-5'>Don't have account ?  
-                <Link to={"/sign-up"} className='text-red-600 hover:text-red-700 hover:underline'>Sign Up</Link>
+                <Link to={"/sign-up"} className='px-2 text-red-600 hover:text-red-700 hover:underline'>Sign Up</Link>
             </p>
 
 
