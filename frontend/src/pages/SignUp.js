@@ -29,16 +29,19 @@ const SignUp = () => {
     };
 
     
-    const handleUploadPic = async(e)=>{
-      const file = e.target.files[0];
-      const imagePic= await imageTobase64(file)
-      setData((preve)=>{
-        return{
-          ...preve,
-          profilePic: imagePic
-        }
-      })
-    }
+    const handleUploadPic = async(e) =>{
+        const file = e.target.files[0]
+        
+        const imagePic = await imageTobase64(file)
+        
+        setData((preve)=>{
+          return{
+            ...preve,
+            profilePic : imagePic
+          }
+        })
+    
+      }
 
 
     const handleSubmit = async (e)=>{

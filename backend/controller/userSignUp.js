@@ -1,5 +1,5 @@
-const userModel = require('../models/userModel');
 const bcrypt = require('bcryptjs');
+const userModel = require('../models/userModel');
 
 
 async function userSignUpController(req, res) {
@@ -8,7 +8,7 @@ async function userSignUpController(req, res) {
         const { email, password, name } = req.body
         const user = await userModel.findOne({ email })
 
-        console.log("user", user)
+        console.log("user by findone", user)
 
         if (user) {
             throw new Error("User already exists")
@@ -34,6 +34,7 @@ async function userSignUpController(req, res) {
         const payload = {
 
             ...req.body,
+            role: "GENERAL",
             password: hashPassword
         }
 
