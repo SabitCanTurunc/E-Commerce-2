@@ -1,28 +1,34 @@
 import React, { useState } from 'react'
 import loginIcons from '../assest/signin.gif'
 import { FaEye,FaEyeSlash  } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import imageTobase64 from  '../helpers/imageTobase64'
+import SummaryApi from '../common';
+import { toast } from 'react-toastify';
 
-
-const SignUP = () => {
+const SignUp = () => {
     const [showPassword,setShowPassword]=useState(false);
     const [showConfirmPassword,setShowConfirmPassword]=useState(false)
+
     const [data,setData] = useState({
         email:"",
         password:"",
         name:"",
         confirmPassword:"",
         profilePic:"",
-    })
+    });
 
-    const handleChange = (e)=>{
+    const navigate= useNavigate()
+
+    const handleOnChange = (e)=>{
         const {name,value} = e.target;
         setData((preve)=>({
            ...preve,
-            [name]:value
-        }))
-    }
+            [name]:value,
+        }));
+    };
+
+    
     const handleUploadPic = async(e)=>{
       const file = e.target.files[0];
       const imagePic= await imageTobase64(file)
@@ -35,13 +41,47 @@ const SignUP = () => {
     }
 
 
-    const handleSubmit = (e)=>{
+    const handleSubmit = async (e)=>{
         e.preventDefault();
-        console.log("data login:",data);
+
+        if(data.password === data.confirmPassword){
+
+            console.log("SummaryApi.SignUp.url",SummaryApi.SignUp.url);
+
+            const dataResponse = await fetch(SummaryApi.SignUp.url,{
+                method: SummaryApi.SignUp.method,
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+            
+            const dataApi= await dataResponse.json();
+
+            if(dataApi.success){
+
+                toast.success(dataApi.message)
+                navigate("/login")
+            }else{
+                toast.error(dataApi.message)
+            }
+            
+
+            
+
+            console.log("data response post json: ",dataApi);
+            
+        }else{
+            toast.error("Please check password and confirm password")
+
+        }
         
+        
+
+
     }
   return (
-    <section id='signup'>
+    <section id='SignUp'>
       <div className='mx-auto container p-4 '>
 
         <div className='bg-white p-4 py-5 w-full   mx-auto max-w-sm rounded-2xl '>
@@ -70,7 +110,7 @@ const SignUP = () => {
                             placeholder='Enter your name'  
                             name='name'
                             value={data.name}
-                            onChange={handleChange}
+                            onChange={handleOnChange}
                             required
                             className=' w-full h-full outline-none bg-transparent' />
                     </div>            
@@ -84,13 +124,13 @@ const SignUP = () => {
                             placeholder='Enter email'  
                             name='email'
                             value={data.email}
-                            onChange={handleChange}
+                            onChange={handleOnChange}
                             required
                             className=' w-full h-full outline-none bg-transparent' />
                     </div>            
                 </div>
 
-                <div className='grid'> 
+                <div> 
                     <label>Password:</label>
                     <div className='bg-slate-200 p-2 rounded-md flex'>
                         <input 
@@ -98,7 +138,7 @@ const SignUP = () => {
                             placeholder='Enter Password' 
                             name='password'
                             value={data.password}
-                            onChange={handleChange}
+                            onChange={handleOnChange}
                             required
                             className='w-full h-full outline-none bg-transparent' />
 
@@ -127,9 +167,9 @@ const SignUP = () => {
                         <input 
                             type={showConfirmPassword ? "text":"password"} 
                             placeholder='Enter Confirm Password' 
-                            name='confirmpassword'
+                            name='confirmPassword'
                             value={data.confirmPassword}
-                            onChange={handleChange}
+                            onChange={handleOnChange}
                             required
                             className='w-full h-full outline-none bg-transparent' />
 
@@ -171,4 +211,4 @@ const SignUP = () => {
   )
 }
 
-export default SignUP
+export default SignUp;
