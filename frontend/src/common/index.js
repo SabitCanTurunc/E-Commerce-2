@@ -1,13 +1,17 @@
 const backendDomain = "http://localhost:8080"
 
-const SummaryApi={
-    SignUp : {
+const SummaryApi = {
+    SignUp: {
         url: `${backendDomain}/api/signup`,
-        method :"post",
+        method: "post",
     },
-    SignIn : {
+    SignIn: {
         url: `${backendDomain}/api/signin`,
-        method :"post",
+        method: "post",
+    },
+    current_user: {
+        url: `${backendDomain}/api/user-details`,
+        method: "get",
     }
 }
 
