@@ -1,0 +1,50 @@
+E-Commerce Sitesi Kullanıcı El Kitapçığı
+Giriş
+Bu el kitapçığı, e-ticaret sitemizde sorunsuz bir alışveriş deneyimi yaşamanız için size rehberlik edecektir. Ürün arama, satın alma işlemleri, ödeme yöntemleri, sipariş takibi ve müşteri hizmetleri ile ilgili tüm gerekli bilgileri bu kılavuzda bulabilirsiniz.
+
+1. Hesap Oluşturma ve Giriş
+1.1. Hesap Oluşturma
+Ana Sayfa: Ana sayfamızın sağ üst köşesinde bulunan "Kayıt Ol" butonuna tıklayın.
+Bilgiler: Adınız, soyadınız, e-posta adresiniz ve şifreniz gibi gerekli bilgileri girin.
+Onay: E-posta adresinize gönderilen onay bağlantısına tıklayarak hesabınızı etkinleştirin.
+1.2. Giriş
+Giriş Yap: Sağ üst köşedeki "Giriş Yap" butonuna tıklayın.
+Bilgiler: Kayıt sırasında kullandığınız e-posta adresi ve şifrenizi girin.
+Oturum Aç: "Giriş Yap" butonuna tıklayın.
+2. Ürün Arama ve İnceleme
+2.1. Ürün Arama
+Arama Çubuğu: Ana sayfanın üst kısmında yer alan arama çubuğuna aradığınız ürünün adını veya anahtar kelimesini yazın ve "Ara" butonuna tıklayın.
+Kategoriler: Ana sayfanın sol tarafında bulunan kategori listesinden ilgili kategoriyi seçerek ürünleri görüntüleyin.
+2.2. Ürün İnceleme
+Ürün Listesi: Arama sonuçlarından veya kategori sayfasından ilgilendiğiniz ürüne tıklayın.
+Ürün Detayları: Ürün açıklamaları, özellikler, fiyat ve müşteri yorumlarını inceleyin.
+Görseller: Ürün fotoğraflarını inceleyerek detaylı bilgi edinin.
+3. Sepete Ekleme ve Satın Alma
+3.1. Sepete Ekleme
+Ürün Sayfası: İncelediğiniz ürün sayfasında bulunan "Sepete Ekle" butonuna tıklayın.
+Sepet Görüntüleme: Sağ üst köşede yer alan sepet ikonuna tıklayarak sepetinizi görüntüleyin.
+3.2. Satın Alma İşlemi
+Sepet: Sepetinizdeki ürünleri kontrol edin ve "Satın Al" butonuna tıklayın.
+Adres Bilgileri: Teslimat adresinizi girin veya mevcut adreslerden birini seçin.
+Ödeme Yöntemi: Kredi kartı, banka kartı, veya diğer ödeme yöntemlerinden birini seçin ve gerekli bilgileri girin.
+Siparişi Onayla: Siparişinizi gözden geçirin ve "Siparişi Onayla" butonuna tıklayın.
+4. Sipariş Takibi
+4.1. Sipariş Durumu
+Hesabım: Sağ üst köşedeki kullanıcı ikonuna tıklayarak "Hesabım" sayfasına gidin.
+Siparişlerim: "Siparişlerim" bölümüne tıklayarak mevcut siparişlerinizi görüntüleyin.
+Durum Takibi: Sipariş durumu, kargo bilgileri ve tahmini teslimat tarihlerini buradan takip edebilirsiniz.
+5. İade ve Değişim
+5.1. İade ve Değişim Politikası
+Politika: İade ve değişim politikamızı inceleyin. Genellikle, ürün teslimatından itibaren 14 gün içinde iade veya değişim yapabilirsiniz.
+İade Talebi: "Hesabım" sayfasındaki "İade Talepleri" bölümünden yeni bir iade talebi oluşturun.
+İade Kargo: Ürünü orijinal ambalajında, fatura ve iade talep numarası ile birlikte belirtilen adrese kargolayın.
+6. Müşteri Hizmetleri
+6.1. İletişim
+Canlı Destek: Ana sayfanın alt köşesindeki canlı destek butonuna tıklayarak müşteri temsilcisi ile anında iletişime geçin.
+E-posta: Müşteri hizmetleri için belirlenen e-posta adresine sorunlarınızı ve sorularınızı iletin.
+Telefon: Belirtilen müşteri hizmetleri numarasını arayarak doğrudan destek alın.
+7. Güvenlik ve Gizlilik
+7.1. Veri Güvenliği
+SSL Sertifikası: Web sitemiz SSL sertifikası ile korunmaktadır, bu da kişisel bilgilerinizin güvenliğini sağlar.
+Gizlilik Politikası: Kişisel verilerinizin nasıl işlendiğini öğrenmek için gizlilik politikamızı okuyun.
+Bu kılavuz, e-ticaret sitemizi kullanırken ihtiyaç duyabileceğiniz temel bilgileri içermektedir. Daha fazla yardıma ihtiyaç duyarsanız, lütfen müşteri hizmetleri ile iletişime geçmekten çekinmeyin. İyi alışverişler!
