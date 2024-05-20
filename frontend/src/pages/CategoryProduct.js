@@ -101,17 +101,17 @@ const CategoryProduct = () => {
            <div className='bg-white p-2 min-h-[calc(100vh-120px)] overflow-y-scroll'>
                 {/**sort by */}
                 <div className=''>
-                    <h3 className='text-base uppercase font-medium text-slate-500 border-b pb-1 border-slate-300'>Sort by</h3>
+                    <h3 className='text-base uppercase font-medium text-slate-500 border-b pb-1 border-slate-300'>Sırala</h3>
 
                     <form className='text-sm flex flex-col gap-2 py-2'>
                         <div className='flex items-center gap-3'>
                           <input type='radio' name='sortBy' checked={sortBy === 'asc'} onChange={handleOnChangeSortBy} value={"asc"}/>
-                          <label>Price - Low to High</label>
+                          <label>Fiyat - Düşükten Yükseğe</label>
                         </div>
 
                         <div className='flex items-center gap-3'>
                           <input type='radio' name='sortBy' checked={sortBy === 'dsc'} onChange={handleOnChangeSortBy} value={"dsc"}/>
-                          <label>Price - High to Low</label>
+                          <label>Fiyat - Yüksekten Düşüğe</label>
                         </div>
                     </form>
                 </div>
@@ -119,7 +119,7 @@ const CategoryProduct = () => {
 
                 {/**filter by */}
                 <div className=''>
-                    <h3 className='text-base uppercase font-medium text-slate-500 border-b pb-1 border-slate-300'>Category</h3>
+                    <h3 className='text-base uppercase font-medium text-slate-500 border-b pb-1 border-slate-300'>Kategori</h3>
 
                     <form className='text-sm flex flex-col gap-2 py-2'>
                         {

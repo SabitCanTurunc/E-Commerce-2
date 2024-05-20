@@ -180,18 +180,18 @@ const Cart = () => {
                             </div>
                             ) : (
                                 <div className='h-36 bg-white'>
-                                    <h2 className='text-white bg-red-600 px-4 py-1'>Summary</h2>
+                                    <h2 className='text-white bg-red-600 px-4 py-1'>Hesap Özeti</h2>
                                     <div className='flex items-center justify-between px-4 gap-2 font-medium text-lg text-slate-600'>
-                                        <p>Quantity</p>
+                                        <p>Ürün Sayısı</p>
                                         <p>{totalQty}</p>
                                     </div>
 
                                     <div className='flex items-center justify-between px-4 gap-2 font-medium text-lg text-slate-600'>
-                                        <p>Total Price</p>
+                                        <p>Toplam Fiyat</p>
                                         <p>{displayTRYCurrency(totalPrice)}</p>    
                                     </div>
 
-                                    <button className='bg-blue-600 p-2 text-white w-full mt-2'>Payment</button>
+                                    <button className='bg-blue-600 p-2 text-white w-full mt-2'>Şimdi Öde</button>
 
                                 </div>
                             )
